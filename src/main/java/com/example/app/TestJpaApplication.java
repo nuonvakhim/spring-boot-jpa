@@ -12,8 +12,13 @@ import java.util.List;
 import java.util.UUID;
 
 @SpringBootApplication
-public class TestJpaApplication implements CommandLineRunner {
+public class TestJpaApplication  {
 
+    public static void main(String[] args) {
+        SpringApplication.run(TestJpaApplication.class, args);
+    }
+
+/*
     private BookRepository repository;
     private BookService bookService;
 
@@ -66,5 +71,6 @@ public class TestJpaApplication implements CommandLineRunner {
         System.out.println(bookByPk);
 
         bookService.deleteBookByStatus(false);
-    }
+        */
+
 }
