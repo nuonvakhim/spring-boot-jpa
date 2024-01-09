@@ -23,6 +23,7 @@ public class Role implements GrantedAuthority {
 
     @ManyToMany(mappedBy = "roles")
     private List<User> users;
+
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "roles_authorities",
             joinColumns = @JoinColumn(name = "role_id" , referencedColumnName = "id"),

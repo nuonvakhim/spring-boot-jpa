@@ -6,7 +6,7 @@ import lombok.*;
 import java.util.UUID;
 
 
-@Entity(name="e_book")
+@Entity
 @Table(name="books")
 @NoArgsConstructor
 @Getter

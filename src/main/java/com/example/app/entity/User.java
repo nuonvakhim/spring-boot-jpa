@@ -15,10 +15,13 @@ import java.util.List;
 @NoArgsConstructor
 public class User {
     @Id
-    @GeneratedValue (strategy = GenerationType.AUTO)
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String email;
+
     private String password;
+
     private Boolean status;
 
     @ManyToMany(fetch = FetchType.EAGER)
@@ -28,7 +31,6 @@ public class User {
 
     )
     private List<Role> roles;
-
 
 
 }
